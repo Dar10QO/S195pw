@@ -30,11 +30,11 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav text-white">
               <li class="nav-item text-end">
-                <a class="nav-link active text-white" aria-current="page" href="{{route('formulario')}}">Registro de Clientes</a>
+                <a class="nav-link active text-white {{ request()->routeIs('formulario')?'border-bottom border-white':'' }}" aria-current="page" href="{{route('formulario')}}">Registro de Clientes</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link  text-white" href="{{route('clientes')}}">Consultar Clientes</a>
+                <a class="nav-link  text-white {{ request()->routeIs('clientes')?'border-bottom border-white':'' }}" href="{{route('clientes')}}">Consultar Clientes</a>
               </li>
             </ul>
           </div>
